@@ -1,3 +1,9 @@
+/**
+ * Program to check Bubble_sort runtime analysis
+ *
+ * Compilation : gcc bubblesort.c
+ * Execution : ./Bubble_sort
+ */
 #include<stdio.h>
 #include<stdlib.h>
 #include<sys/time.h>
@@ -21,8 +27,11 @@ void bubblesort(int array[], int size, int type){
 		       
 		       }
 		}
+			//Comparing the elements in Descending order
 				if (type == 2){
 				if (array[j] < array[j+1]){
+					
+					//Swapping of elements
 					int temp = array[j];
 		 			array[j] = array[j + 1];
 					array[j + 1] = temp;
@@ -33,6 +42,10 @@ void bubblesort(int array[], int size, int type){
 	}
 }	
 
+/*
+* type 1-> Sort Numbers in Ascending Order
+* type 2-> Sort Numbers in Descending Order
+*/
 
 int main(){
 	
@@ -64,7 +77,8 @@ int main(){
     	long seconds = (end.tv_sec - start.tv_sec);
 
     	long micros = ((seconds * 1000000) + end.tv_usec) - (start.tv_usec);
- 
+ 	
+	// Output in Seconds and Microseconds
     	printf("The elapsed time is %ld seconds and %ld micros\n", seconds, micros);
 
 	return 0;
