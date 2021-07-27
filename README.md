@@ -5,5 +5,3 @@ Input sample size should be 8000, 12000, 16000…….. 32000
 
 Analyze the behavior when data is random (use rand() function, data is sorted and when data is reversely sorted)
 
-Add your data in excel sheet
-
