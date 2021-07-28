@@ -52,8 +52,6 @@ int main(){
 	int sample_size, data, type;
 
 	struct timeval start, end;
- 
-    	gettimeofday(&start, NULL);
 
 	printf("Enter Sample Size:");
 	
@@ -69,6 +67,8 @@ int main(){
 		
 		array[i] = rand();
 	}
+	
+	gettimeofday(&start, NULL);
 	
 	bubblesort(array, sample_size, type);
 	
